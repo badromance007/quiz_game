@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+.start-game {
+    text-align: center;
+}
+
+.game-description {
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    color: #293264;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #4d5b9e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+.button:focus {
+    box-shadow: 0px 2px 2px rgb(0,0,0,0.5);
+}
+.btn-big {
+    padding: 20px 60px 20px 60px;
+    border-radius: 20px;
+}
+
+.btn-medium {
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.progress-game {
+    color: #293264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer {
+    border: 1px solid #6d78af;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    color: #293264;
+    cursor: pointer;
+    text-align: center;
+}
+
+.chosen-answer {
+    background-color: #d6dbf5;
+    border: none;
+    font-weight: bold;
+}
+
+.right-answer {
+    background-color: #94d7a2;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+
+.wrong-answer--chosen {
+    background-color: #f6dadc;
+    color: #8f95b0;
+    border: none;
+    font-weight: bold;
+}
+.wrong-answer {
+    border: 1px solid #9ba1ba;
+    color: #9ba1ba;
+}
+
+.question {
+    border-bottom: 1px solid #e1e4f3;
+    padding: 0 0 20px 0;
+}
+.question:last-child {
+    margin-bottom: 30px;
+}
+
+.answer-container {
+    display: grid;
+    gap: 20px;
+}
+
+.score-text {
+    font-weight: bold;
+    margin-right: 30px;
+}
+.score-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .answer-container {
+        grid-template-columns: auto auto auto auto; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    .answer-container {
+        gap: 10px;
+    }
+}
